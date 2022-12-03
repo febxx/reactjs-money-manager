@@ -1,0 +1,235 @@
+/* Write your CSS here */
+.app-container {
+    justify-content: center;
+    min-height: 100vh;
+    background-image: url('../../assets/bg.png');
+    background-size: cover;
+}
+
+.responsive-container {
+    width: 100%;
+    max-width: 550px;
+}
+
+@media screen and (min-width: 768px) {
+    .responsive-container {
+        max-width: 1140px;
+    }
+}
+
+.header-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-image: url('https://res.cloudinary.com/do4qwwms8/image/upload/v1626263091/Money%20Manager/money-manager-header_rxlcrn.png');
+    background-size: cover;
+    height: 50px;
+    border-radius: 5px;
+    margin: 5px;
+}
+
+.heading {
+    color: #475569;
+    font-family: 'Roboto';
+    font-size: 20px;
+    font-weight: 500;
+}
+
+@media screen and (min-width: 768px) {
+    .heading {
+        font-size: 30px;
+    }
+}
+
+.header-content {
+    color: #475569;
+    font-family: 'Roboto';
+    font-size: 14px;
+    margin: 0px;
+}
+
+@media screen and (min-width: 768px) {
+    .header-content {
+        font-size: 18px;
+    }
+}
+
+.money-details-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #eaf1fb;
+    border-radius: 5px;
+    margin: 0 5px;
+    padding: 10px;
+    text-align: center;
+    height: auto;
+}
+
+.balance-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 33%;
+    margin-right: 0px;
+    border-right: 1px solid #c5c8fc;
+}
+
+.income-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 33%;
+    margin-right: 0px;
+}
+
+.expenses-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 33%;
+    margin-right: 0px;
+    border-left: 1px solid #c5c8fc;
+}
+
+.details-text {
+    color: #475569;
+    font-size: 12px;
+    font-family: 'Roboto';
+    line-height: 1.7;
+    margin: 0px;
+    margin-bottom: 8px;
+}
+
+.details-money {
+    color: #475569;
+    font-size: 16px;
+    font-family: 'Roboto';
+    line-height: 1.3;
+    margin: 0px;
+}
+
+.transaction-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 5px;
+    margin: 10px 5px 0;
+    text-align: center;
+    height: auto;
+}
+
+.transactions-table-container {
+    height: 100%;
+    border-radius: 8px;
+}
+
+.transactions-table {
+    padding-left: 0;
+    margin: 0px;
+    margin-bottom:5px;
+    background-color: #eaf1fb;
+    border: 1px solid #cbd5e1;
+}
+
+.table-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style-type: none;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 5px;
+}
+
+.table-header-cell {
+    color: #334155;
+    font-family: 'Roboto';
+    font-size: 12px;
+    font-weight: 500;
+    border-right: none;
+}
+
+.table-row {
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+@media screen and (min-width: 768px) {
+    .table-row {
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+}
+
+.transaction-text {
+    color: #475569;
+    font-family: 'Roboto';
+    font-size: 12px;
+    width: 30%;
+}
+
+@media screen and (min-width: 768px) {
+    .transaction-text {
+        font-size: 14px;
+    }
+}
+
+.delete-container {
+    display: flex;
+    width: 10%;
+}
+
+.delete-button {
+    background: transparent;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+.delete-icon {
+    background: transparent;
+    width: 20px;
+    height: 20px;
+    align-self: center;
+    border: none;
+    outline: none;
+}
+
+.button {
+    background-color: #0b69ff;
+    color: #ffffff;
+    font-family: 'Roboto';
+    font-size: 14px;
+    font-weight: 600;
+    min-width: 25px;
+    border-radius: 6px;
+    border: none;
+    padding-left: 24px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-right: 24px;
+    outline: none;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+.btn-add {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background-color: #c5c8fc;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    margin: 20px;
+    border: none;
+    color: #1e293b;
+    font-size: 20px;
+}
